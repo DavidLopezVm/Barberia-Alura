@@ -1,0 +1,286 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.contacto-nuevo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+
+nav li{
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px; /* a toda la lista de productos ocupa un total de 940 pixeles */
+    margin:0 auto;
+    padding: 50px; /*para espacio respecto al header*/
+}
+
+.productos li{
+    display: inline-block; /*esta propuesta es para colocar en horizontal la lista*/
+    text-align: center; /* texto centrado*/
+    width: 30%; /*Cada elemento ocupa el 30% del espacio (esto se multiplica * 3 que seria de cada elemento)*/ 
+    vertical-align: top; /* se alinea con la vertical */
+    margin: 0 1.5%; /* esto se ocupa para los espacios en los laterales que se tienen de cada producto(izquierda y derecha) lo cual se multiplica por 6 dando resultado 9 y si sumamos el 90% de ocupacion de cada producto sumamos un 99% lo cual es el esapcio que ocuoamos de los 940 pixeles.*/
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000; /*esta  linea de codigo son para el marco que tendra cada uno de los productos*/
+    border-radius: 10px; /*le da borde a los rectangulos */
+    /*border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;*/
+    /*border-color: #000000; 
+    border-width: 2px;
+    border-style: solid;*/
+}
+
+.productos li:hover{
+    border-color: #c78c19; /*esta porpiedad es para que cuando el mause este por esa area, se pintara de ese color*/
+}
+
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px; /* aqui se cambia el tamaño de la letra*/
+    font-weight: bold; /*aqui se pone en negritas */
+}
+
+.productos li:hover h2{
+    font-size: 35px; /* Esta parte del codigo sirve para hacer mas grande o mas pequeño al momento de pasar con el cursor sobre los productos*/
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{ /* el "." es para clases definidas como class="producto-precio" */
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px; /*Separa por 10 pixeles el precio de la descripción*/
+}
+
+footer{
+    text-align: center;
+    background:url(imagenes/bg.jpg); /*se ocupa la imagen en todo el espacio a pesar de ser cuadrada*/
+    padding: 40px;
+    
+}
+
+.Copyright{
+ color:#FFFFFF;
+ font-size: 13px;  
+ margin: 20px;
+}
+
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px; /*estaa propiedad es para que se tenga un espacio entre el borde y el contenido*/
+    width: 50%;
+}
+
+.checkbox{
+    margin:20px 0;
+}
+
+.Enviar{
+    width: 40% ;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /*Esto es para que tarde 1 segundo en cambiar de color, da un efecto como de retardo*/
+    cursor: pointer;
+}
+
+.Enviar:hover{
+    background: black;
+    transform: scale(1.1); /* Esta sirve para aumentar la escala y hacer un efecto de engrandecer*/
+    
+}
+
+table{
+    margin:40px 40px;
+    
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+
+/* CSS para nuestro Home */
+
+.banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 3em;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;  /* arriba derecha abajo izquierda es decir sentido horario */
+    
+}
+
+.mapa{
+    padding: 3em 0;
+    background:linear-gradient(#FEFEFE,#888888)
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em;
+    background: #888888;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items::before{
+    content: "🟇";
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+
+.imagen-diferenciales:hover{
+    opacity: 30%;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+
+@media screen and (max-width:480px) {
+    h1,.contacto-nuevo{
+        text-align: center;
+    }
+    .input-padron{
+        margin: auto;
+    }
+    table{
+        margin: 30px 20px 30px 100px;
+    }
+    nav{
+        position: static;
+    }
+    .caja,.principal, .mapa-contenido, .contenido-diferenciales,.video,.productos, .contacto-nuevo{
+        width: auto;
+    }
+    .lista-diferenciales,.imagen-diferenciales,.productos li{
+        width: 100%;
+    }
+    
+}
